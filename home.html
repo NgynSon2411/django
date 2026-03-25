@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Mini</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+
+<body>
+
+    <!-- 🔶 NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shop Mini</a>
+        </div>
+    </nav>
+
+    <!-- 🔶 CONTENT -->
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-4">Sản phẩm nổi bật</h2>
+
+        <div class="row justify-content-center">
+
+            <!-- 🛍️ SẢN PHẨM 1 -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="{% static 'img/sp1.jpg' %}" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Áo thun</h5>
+                        <p class="text-danger">120.000đ</p>
+                        <button class="btn btn-danger">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 🛍️ SẢN PHẨM 2 -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="{% static 'img/sp2.jpg' %}" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Giày thể thao</h5>
+                        <p class="text-danger">350.000đ</p>
+                        <button class="btn btn-danger">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 🛍️ SẢN PHẨM 3 -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="{% static 'img/sp3.jpg' %}" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Túi xách</h5>
+                        <p class="text-danger">220.000đ</p>
+                        <button class="btn btn-danger">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 🔶 FOOTER -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        © 2026 Shop Mini
+    </footer>
+
+</body>
+
+</html>
